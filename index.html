@@ -14,35 +14,33 @@
 
         body {
             font-family: 'Aptos', Arial, sans-serif;
-            background: linear-gradient(135deg, #0052cc 0%, #003d99 50%, #001f4d 100%);
+            background-color: #000000;
             color: white;
             min-height: 100vh;
         }
 
         /* Logo Header */
         .logo-header {
-            background-color: rgba(0, 52, 153, 0.95);
-            padding: 1.5rem 2rem;
+            background-color: #000000;
+            padding: 2rem;
             text-align: center;
-            border-bottom: 4px solid #ff4444;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-bottom: 3px solid white;
         }
 
         .logo-header img {
-            max-width: 400px;
+            max-width: 500px;
             width: 100%;
             height: auto;
         }
 
         /* Navigation */
         nav {
-            background: linear-gradient(90deg, #003d99 0%, #0052cc 100%);
+            background-color: #000000;
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            border-bottom: 3px solid #ffcc00;
+            border-bottom: 2px solid white;
         }
 
         nav ul {
@@ -63,19 +61,17 @@
         }
 
         nav a:hover {
-            color: #ffcc00;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+            color: #cccccc;
+            text-decoration: underline;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #ff4444 0%, #003d99 50%, #ffcc00 100%);
+            background-color: #1a1a1a;
             color: white;
             padding: 4rem 2rem;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-            border-bottom: 5px solid #ffcc00;
+            border-bottom: 2px solid white;
         }
 
         .hero h1 {
@@ -84,34 +80,20 @@
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 3px;
-            animation: slideIn 0.8s ease-out;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
             font-weight: 400;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .cta-button {
-            background-color: #ffcc00;
-            color: #003d99;
+            background-color: white;
+            color: #000000;
             padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 5px;
+            border: 2px solid white;
+            border-radius: 0;
             font-weight: 700;
             font-size: 1.1rem;
             cursor: pointer;
@@ -121,9 +103,8 @@
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 204, 0, 0.4);
-            background-color: #ffff00;
+            background-color: #000000;
+            color: white;
         }
 
         /* Stats Section */
@@ -137,27 +118,28 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, rgba(255, 68, 68, 0.2) 0%, rgba(0, 52, 153, 0.3) 100%);
+            background-color: #1a1a1a;
             padding: 2rem;
-            border-radius: 10px;
+            border-radius: 0;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            border: 3px solid #ffcc00;
+            border: 2px solid white;
             transition: all 0.3s ease;
         }
 
         .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(255, 204, 0, 0.3);
-            border-color: #ff4444;
+            background-color: white;
+            color: #000000;
         }
 
         .stat-card h3 {
             font-size: 2.5rem;
-            color: #ffcc00;
+            color: white;
             margin-bottom: 0.5rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
             font-weight: 700;
+        }
+
+        .stat-card:hover h3 {
+            color: #000000;
         }
 
         .stat-card p {
@@ -166,20 +148,21 @@
             font-weight: 600;
         }
 
+        .stat-card:hover p {
+            color: #000000;
+        }
+
         /* Featured Car Section */
         .featured {
-            background: linear-gradient(135deg, rgba(255, 68, 68, 0.15) 0%, rgba(0, 52, 153, 0.25) 100%);
+            background-color: #1a1a1a;
             padding: 3rem 2rem;
             max-width: 1200px;
             margin: 3rem auto;
-            border-radius: 10px;
-            border-left: 8px solid #ffcc00;
-            border-right: 4px solid #ff4444;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid white;
         }
 
         .featured h2 {
-            color: #ffcc00;
+            color: white;
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             text-align: center;
@@ -196,21 +179,18 @@
         }
 
         .featured-image {
-            background: linear-gradient(135deg, #ff4444 0%, #ffcc00 100%);
+            background-color: #333333;
             padding: 2rem;
-            border-radius: 10px;
+            border: 2px solid white;
             text-align: center;
             font-size: 6rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            border: 3px solid white;
         }
 
         .featured-details h3 {
-            color: #ffcc00;
+            color: white;
             font-size: 2rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         .featured-details p {
@@ -222,22 +202,20 @@
 
         .detail-label {
             font-weight: 700;
-            color: #ffcc00;
+            color: white;
         }
 
         /* Search & Filter */
         .search-section {
-            background: linear-gradient(135deg, rgba(0, 52, 153, 0.3) 0%, rgba(255, 68, 68, 0.15) 100%);
+            background-color: #1a1a1a;
             padding: 2rem;
             max-width: 1200px;
             margin: 2rem auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border: 3px solid #ffcc00;
+            border: 2px solid white;
         }
 
         .search-section h2 {
-            color: #ffcc00;
+            color: white;
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
             font-weight: 700;
@@ -253,25 +231,29 @@
 
         input, select {
             padding: 0.8rem;
-            border: 2px solid #ffcc00;
-            border-radius: 5px;
+            border: 2px solid white;
+            border-radius: 0;
             font-family: 'Aptos', Arial, sans-serif;
             font-size: 1rem;
-            background-color: rgba(255, 255, 255, 0.95);
-            color: #003d99;
+            background-color: #333333;
+            color: white;
             font-weight: 600;
             transition: all 0.3s ease;
         }
 
         input::placeholder {
-            color: #0052cc;
+            color: #aaaaaa;
         }
 
         input:focus, select:focus {
             outline: none;
-            border-color: #ff4444;
-            box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
             background-color: white;
+            color: #000000;
+        }
+
+        option {
+            background-color: #1a1a1a;
+            color: white;
         }
 
         /* Collection Grid */
@@ -282,7 +264,7 @@
         }
 
         .collection h2 {
-            color: #ffcc00;
+            color: white;
             font-size: 2.5rem;
             margin-bottom: 2rem;
             text-align: center;
@@ -298,40 +280,45 @@
         }
 
         .car-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 68, 68, 0.1) 100%);
-            border-radius: 10px;
+            background-color: #1a1a1a;
+            border-radius: 0;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-top: 4px solid #ffcc00;
-            border-bottom: 4px solid #ff4444;
+            border: 2px solid white;
             transition: all 0.3s ease;
         }
 
         .car-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 10px 35px rgba(255, 204, 0, 0.3);
+            background-color: white;
+            color: #000000;
         }
 
         .car-image {
-            background: linear-gradient(135deg, #ff4444 0%, #ffcc00 100%);
+            background-color: #333333;
             height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 4rem;
-            border-bottom: 3px solid white;
+            border-bottom: 2px solid white;
+        }
+
+        .car-card:hover .car-image {
+            background-color: #cccccc;
         }
 
         .car-info {
             padding: 1.5rem;
-            background: rgba(0, 52, 153, 0.2);
         }
 
         .car-info h3 {
-            color: #ffcc00;
+            color: white;
             margin-bottom: 0.5rem;
             font-size: 1.3rem;
             font-weight: 700;
+        }
+
+        .car-card:hover .car-info h3 {
+            color: #000000;
         }
 
         .car-details {
@@ -340,21 +327,29 @@
             gap: 1rem;
             margin: 1rem 0;
             font-size: 0.95rem;
-            color: #e0e0e0;
+            color: #cccccc;
+        }
+
+        .car-card:hover .car-details {
+            color: #333333;
         }
 
         .detail-label {
             font-weight: 700;
-            color: #ffcc00;
+            color: white;
+        }
+
+        .car-card:hover .detail-label {
+            color: #000000;
         }
 
         /* About Section */
         .about {
-            background: linear-gradient(135deg, rgba(255, 68, 68, 0.15) 0%, rgba(0, 52, 153, 0.25) 100%);
+            background-color: #1a1a1a;
             padding: 3rem 2rem;
             margin: 3rem 0;
-            border-top: 5px solid #ffcc00;
-            border-bottom: 5px solid #ff4444;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
         }
 
         .about-container {
@@ -363,7 +358,7 @@
         }
 
         .about h2 {
-            color: #ffcc00;
+            color: white;
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             font-weight: 700;
@@ -380,12 +375,11 @@
 
         /* Footer */
         footer {
-            background: linear-gradient(90deg, #003d99 0%, #0052cc 50%, #003d99 100%);
+            background-color: #000000;
             color: white;
             text-align: center;
             padding: 2.5rem;
-            margin-top: 3rem;
-            border-top: 5px solid #ffcc00;
+            border-top: 2px solid white;
         }
 
         footer p {
@@ -398,7 +392,7 @@
         }
 
         .social-links a {
-            color: #ffcc00;
+            color: white;
             margin: 0 1rem;
             text-decoration: none;
             transition: all 0.3s ease;
@@ -407,8 +401,7 @@
         }
 
         .social-links a:hover {
-            color: white;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+            text-decoration: underline;
         }
 
         /* Responsive */
@@ -439,7 +432,7 @@
 <body>
     <!-- Logo Header -->
     <div class="logo-header">
-        <img src="https://www.hotwheel.com/api/assets/images/logo.svg" alt="Too Loud. Too Fast. Logo">
+        <img src="./logo.jpg" alt="Too Loud. Too Fast. Logo">
     </div>
 
     <!-- Navigation -->
